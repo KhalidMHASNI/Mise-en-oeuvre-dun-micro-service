@@ -25,7 +25,7 @@ public class BankAccountServiceApplication {
 	@Bean
 	CommandLineRunner start(BankAccountRepository bankAccountRepository, CustomerRepository customerRepository) {
 		return args -> {
-			Stream.of("Mohamed", "Khalid","Hanae","Oumaïma").forEach(c->{
+			Stream.of("Teyyeb", "langouste","Jalal","Oumaïma").forEach(c->{
 				Customer customer=Customer.builder()
 						.name(c)
 						.build();
