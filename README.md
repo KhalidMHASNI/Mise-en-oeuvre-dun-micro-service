@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 # Micro services
 1. Créer un projet Spring Boot avec les dépendances Web, Spring Data JPA, H2, Lombok
-![Capture d'écran 2023-05-15 221229](https://github.com/oumaimabenaboud/micro_service/assets/120368654/02ac3d92-0004-44fb-820d-c99d5a85cc03)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/5727a414-a612-4f50-bcd7-ade1d245ff0b)
 
 2. Créer l'entité JPA Compte
 
@@ -9,94 +9,121 @@
 
 
 3. Créer l'interface CompteRepository basée sur Spring Data
-![Capture d'écran 2023-05-15 222714](https://github.com/oumaimabenaboud/micro_service/assets/120368654/05661bc5-e13b-4a5d-afe7-f7d491ecf8eb)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/944e246a-b229-46d5-990a-3153efbe9faf)
+
+
 
 4. Tester la couche DAO
-![Capture d'écran 2023-05-15 222548](https://github.com/oumaimabenaboud/micro_service/assets/120368654/ad9bacbe-b79d-443f-a436-c66075799bb0)
-![Capture d'écran 2023-05-15 224626](https://github.com/oumaimabenaboud/micro_service/assets/120368654/21a25c27-a002-45c0-9ca2-6f38aae0af9b)
-![Capture d'écran 2023-05-15 224903](https://github.com/oumaimabenaboud/micro_service/assets/120368654/3d53149a-c291-4c3c-9e9c-9060092f639d)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/2cc5a24e-a91f-4908-8f23-983c7b7de887)
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/ad740600-8484-4e2d-b175-3fb48fbd4bd1)
+
 
 5. Créer le Web service Restful qui permet de gérer des comptes
+
 - Liste des comptes
-![Capture d'écran 2023-05-15 233041](https://github.com/oumaimabenaboud/micro_service/assets/120368654/38169c7f-0caa-489e-813e-5da839dfa1b7)
-- Find account by Id
-![Capture d'écran 2023-05-15 233800](https://github.com/oumaimabenaboud/micro_service/assets/120368654/d13f2bcc-b305-4d08-82e7-b62fecf8fb3c)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/8c02d29b-01b6-46b1-9b6a-cf360f5eb9e9)
+
+- Find account by Id (2da01067-e727-4dda-a3de-b4a8ab8afa19)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/a640e2ca-7395-46fc-aead-32f5f630e80b)
+
 
 6. Tester le web micro-service en utilisant un client REST comme Postman
 - Liste des comptes
-![Capture d'écran 2023-05-16 000127](https://github.com/oumaimabenaboud/micro_service/assets/120368654/b620654e-f8fe-4074-9b8d-4d4bb7bdc135)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/0416f624-e64c-4c6d-803b-862294c98293)
+
 - Find account by Id
-![Capture d'écran 2023-05-16 000235](https://github.com/oumaimabenaboud/micro_service/assets/120368654/54fa6eee-0d09-4c94-9f90-8f2352c0adbf)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/581a5a0a-0760-453c-81a2-3ebb2907f847)
+
 - Save new account
-![Capture d'écran 2023-05-16 001933](https://github.com/oumaimabenaboud/micro_service/assets/120368654/13a79119-322e-488c-9c98-66af947530a8)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/44bc6a3a-4621-4898-93dd-74750c184ed2)
+
 - Update account info
-![Capture d'écran 2023-05-16 001952](https://github.com/oumaimabenaboud/micro_service/assets/120368654/e6472709-1265-4da6-8c9b-3b7e36e57998)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/8245133d-3068-4a99-95a0-43e838670700)
 
 7. Générer et tester la documentation Swagger du API Rest du Web service
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/8e5b7eba-678d-4436-aa21-aecc4f755cad)
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/aaf31962-957c-4584-bbc8-6e3b80464148)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/2d1c6c44-f531-4a6f-be85-56bfc35f43aa)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/978726a8-2933-4d71-8677-f7b3dd649b00)
+
 - Importer la documentaion OpenAPI dans Postman
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/968b22d2-af90-46c0-be0a-35b63d086932)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/3ef5da8b-619c-45b7-ba2d-921462a6bbc0)
 
 8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections
 - Utilisation de Spring Data Rest
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/3f23c2dd-f8cb-42c5-bd3f-fc53347b7045)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/bb3dc410-49a0-4ba1-ac6e-0c6d2b126a89)
+
 - Search using "findByType"
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/7d742709-bafa-458f-8af9-12c3d591632b)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/47121705-253b-4945-b209-36caba5ae047)
+
 - Projection
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/99fb0e1a-b608-4f0c-bf0f-620a1e48a9d3)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/8e5ee2de-cbbd-42ef-b854-761d371e883f)
+
 - Search using "byType"
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/e0b2c396-9d71-43ab-a78e-2f37b168136c)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/f63076ed-b32e-4370-97a3-1ccf564328f4)
 
 9. Créer les DTOs et Mappers
 - Save new account using DTOs
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/4fb9fff8-7bec-4667-846e-d2a81b3fb36a)
 
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/e938205a-e136-4fcd-83c3-271d02752aae)
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/1d282940-338b-439e-a080-9f030d5e35b6)
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/7b3c80de-2230-4579-adc3-aff8eadb6f82)
+
+
 - Save new account using Mappers
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/76ac844c-d95e-4712-a5a2-4e98261249cf)
 
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/f51e2990-4f37-4775-aacd-a41f73537558)
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/afea6b05-7969-4e58-a782-82905a2f9600)
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/bed99d3d-7f4c-49de-b555-62c9678d6be4)
 
 10. Créer la couche Service (métier) du micro service
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/f2a22ad4-46a5-482e-92b9-9e9e38321eb7)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/3a4750d8-31c2-4ac0-a65c-07c3de568a1a)
 
 11. Créer un Web service GraphQL pour ce micro-service
 - Test du Webservice using GrahiQL : Liste des comptes
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/ace2badd-a62c-4019-b7fc-1b9d652d01f6)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/c6767638-6327-46c2-8be4-ffb7a1b3a4e4)
+
 - Test du Webservice using GrahiQL : Find account by Id
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/35c6fc4b-36ab-4527-a2a9-678ee5515e68)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/721d4fe9-4bc5-49e7-be4c-75ea67d5b84e)
+
 - Ajout de l'Exception Handler
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/1a11a723-27c9-4066-a723-afa742a91d4a)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/1c95c936-8fe0-44e9-9322-9a825005a290)
+
 - Test du Webservice using GrahiQL : Add new account
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/3cd59bd4-0b01-4d01-b301-988107c4c912)
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/62c6b6b3-4c17-49ff-9844-d91ba883d68a)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/a559f274-7950-4a3e-b641-7a85fd796afa)
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/006a517d-4b60-4597-8a66-fa3b28d15d1e)
+
 - Test du Webservice using GrahiQL : Update account
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/02a01aac-d859-4d36-83e3-034ed633964e)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/2a08055e-e8b6-4482-956c-e2bb74d420d9)
+
 - Test du Webservice using GrahiQL : Delete account
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/c1b84891-5c64-4d44-b718-4e093ecaa0b6)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/9d9132b1-d7b6-4397-9793-4782117eec2f)
+
 - Ajout de l'entité Customer
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/e1c5542b-6c65-404f-ad6a-4c20809a90af)
+
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/6eab7b58-0e12-4ff1-9dcc-9c95403d88f4)
+
 - Test du Webservice using GrahiQL : Liste des comptes avec noms de clients
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/d6823fab-c946-48ad-85be-f1d4495372a9)
 
-![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/f0e04f00-0b23-4f1c-a82e-af775afa67a8)
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/f65cac28-3811-4611-8ad8-a59d313969da)
 
-=======
-# Mise-en-oeuvre-dun-micro-service
-Activité Pratique N°4 : Mise en oeuvre d'un micro-service
-# Travail à faire :
-1. Créer un projet Spring Boot avec les dépendances Web, Spring Data JPA, H2, Lombok
-2. Créer l'entité JPA Compte
-3. Créer l'interface CompteRepository basée sur Spring Data
-4. Tester la couche DAO
-5. Créer le Web service Restfull qui permet de gérer des comptes
-6. Tester le web micro-service en utilisant un client REST comme Postman
-7. Générer et tester le documentation Swagger de des API Rest du Web service
-8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections
-9. Créer les DTOs et Mappers
-10. Créer la couche Service (métier) et du micro service
-11. Créer un Web service GraphQL pour ce micro-service 
-************************************RESPONSE*************************************
- 
->>>>>>> 453d27b2ed20d9a966603803f6bf5f89f8948aac
+![image](https://github.com/KhalidMHASNI/Mise-en-oeuvre-dun-micro-service/assets/82038554/7646a7db-9ed7-4dac-ae1b-a1284c8bf406)
+
