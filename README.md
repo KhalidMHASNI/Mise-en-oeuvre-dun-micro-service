@@ -1,52 +1,83 @@
-# Mise-en-oeuvre-dun-micro-service
-Activité Pratique N°4 : Mise en oeuvre d'un micro-service
-# Travail à faire :
+# Micro services
 1. Créer un projet Spring Boot avec les dépendances Web, Spring Data JPA, H2, Lombok
-2. Créer l'entité JPA Compte
-3. Créer l'interface CompteRepository basée sur Spring Data
-4. Tester la couche DAO
-5. Créer le Web service Restfull qui permet de gérer des comptes
-6. Tester le web micro-service en utilisant un client REST comme Postman
-7. Générer et tester le documentation Swagger de des API Rest du Web service
-8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections
-9. Créer les DTOs et Mappers
-10. Créer la couche Service (métier) et du micro service
-11. Créer un Web service GraphQL pour ce micro-service 
-************************************RESPONSE*************************************
- Teste du web micro-service en utilisant le client REST (Postman)
- -->>bankaccounts
- ![4](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/50a045aa-804d-4462-87f7-e0be2828382b)
- -->>bankaccounts/{id}
- ![5](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/f0e3486c-6c75-4fc8-b19d-27f39a491b05)
--->>POST: bankacounts
-![7](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/aada2049-c98b-4ef5-bdbc-7da0fba083df)
--->>GET:bankaccounts/{id}
-![6](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/67a7a176-70e7-4ac2-a045-6d54dc3815ae)
------------------SWAGGER---------------------------------
-Teste de la documentation Swagger des API Rest du Web service
-![9](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/460c4107-4b90-46ce-b0a5-0208ce6dd3e1)
--->>bankaccounts/{id} using SWAGGER
-![10](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/2d13a9f5-8f83-411f-8eb4-ca9c435ca261)
---------------------------------PROJECTION--------------------------------
-![projection](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/c29304c2-d793-4cdf-af8f-0449ea7b4dbc)
---------------------------------SCHEMADTO---------------------------------
-![schema_dto](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/ab1814d8-2750-4354-9571-5033050c5e51)
----------------------------------SPRING DATA REST------------------------------------------------------------
-![spring_data_rest](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/6ed4ca7b-cb06-4889-9c43-5a3907cfcd41)
--------------------------------------FINDBYTTYPE--------------------------------------------------------------
-![findByType](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/ef7bdd43-e841-4b91-a8ce-6e567135080f)
------------------------------------------CUSTOMERS IN DATABASE------------------------------------------
-![customer](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/b5066c52-5a07-43ef-ac1d-04e9aed95eb6)
-----------------------------------GET ALL BANKACCOUNTS--------------------------------------------------------
-![1](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/43dd3f47-9728-4e7f-a9ee-c2a68a56c264)
-----------------------FIRST TEST USING BROWSER---------------------------------------------------------
-![2](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/e769a173-52d2-46a8-82cf-fa41de5abd6d)
-![3](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/3619f4bf-f926-417b-b4bb-e2de6df20a45)
-![3](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/389de77a-6b31-4d10-a1e3-15296e5b4479)
-------------------------------GRAPHQL-------------------------------------------------------
-1/![graphql1](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/7d556fbd-d26f-4e24-91bd-cd8cc5e94569)
-2/ ![graphql2](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/0f2e301f-5c15-4efa-b1b7-d6f2f3266aac)
-3/ ![graphql3](https://github.com/haazelnuter/TP_N4_MicroService/assets/96618018/e0cbe8b6-d422-4af6-b6b2-83beaa73e79b)
-***************************fin***************************************************************************************
+![Capture d'écran 2023-05-15 221229](https://github.com/oumaimabenaboud/micro_service/assets/120368654/02ac3d92-0004-44fb-820d-c99d5a85cc03)
 
+2. Créer l'entité JPA Compte
+
+![Capture d'écran 2023-05-15 224940](https://github.com/oumaimabenaboud/micro_service/assets/120368654/3c2aec23-6ea3-4de5-b39e-2c647f12cbe4)
+
+
+3. Créer l'interface CompteRepository basée sur Spring Data
+![Capture d'écran 2023-05-15 222714](https://github.com/oumaimabenaboud/micro_service/assets/120368654/05661bc5-e13b-4a5d-afe7-f7d491ecf8eb)
+
+4. Tester la couche DAO
+![Capture d'écran 2023-05-15 222548](https://github.com/oumaimabenaboud/micro_service/assets/120368654/ad9bacbe-b79d-443f-a436-c66075799bb0)
+![Capture d'écran 2023-05-15 224626](https://github.com/oumaimabenaboud/micro_service/assets/120368654/21a25c27-a002-45c0-9ca2-6f38aae0af9b)
+![Capture d'écran 2023-05-15 224903](https://github.com/oumaimabenaboud/micro_service/assets/120368654/3d53149a-c291-4c3c-9e9c-9060092f639d)
+
+5. Créer le Web service Restful qui permet de gérer des comptes
+- Liste des comptes
+![Capture d'écran 2023-05-15 233041](https://github.com/oumaimabenaboud/micro_service/assets/120368654/38169c7f-0caa-489e-813e-5da839dfa1b7)
+- Find account by Id
+![Capture d'écran 2023-05-15 233800](https://github.com/oumaimabenaboud/micro_service/assets/120368654/d13f2bcc-b305-4d08-82e7-b62fecf8fb3c)
+
+6. Tester le web micro-service en utilisant un client REST comme Postman
+- Liste des comptes
+![Capture d'écran 2023-05-16 000127](https://github.com/oumaimabenaboud/micro_service/assets/120368654/b620654e-f8fe-4074-9b8d-4d4bb7bdc135)
+- Find account by Id
+![Capture d'écran 2023-05-16 000235](https://github.com/oumaimabenaboud/micro_service/assets/120368654/54fa6eee-0d09-4c94-9f90-8f2352c0adbf)
+- Save new account
+![Capture d'écran 2023-05-16 001933](https://github.com/oumaimabenaboud/micro_service/assets/120368654/13a79119-322e-488c-9c98-66af947530a8)
+- Update account info
+![Capture d'écran 2023-05-16 001952](https://github.com/oumaimabenaboud/micro_service/assets/120368654/e6472709-1265-4da6-8c9b-3b7e36e57998)
+
+7. Générer et tester la documentation Swagger du API Rest du Web service
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/8e5b7eba-678d-4436-aa21-aecc4f755cad)
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/aaf31962-957c-4584-bbc8-6e3b80464148)
+- Importer la documentaion OpenAPI dans Postman
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/968b22d2-af90-46c0-be0a-35b63d086932)
+
+8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections
+- Utilisation de Spring Data Rest
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/3f23c2dd-f8cb-42c5-bd3f-fc53347b7045)
+- Search using "findByType"
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/7d742709-bafa-458f-8af9-12c3d591632b)
+- Projection
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/99fb0e1a-b608-4f0c-bf0f-620a1e48a9d3)
+- Search using "byType"
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/e0b2c396-9d71-43ab-a78e-2f37b168136c)
+
+9. Créer les DTOs et Mappers
+- Save new account using DTOs
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/4fb9fff8-7bec-4667-846e-d2a81b3fb36a)
+
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/e938205a-e136-4fcd-83c3-271d02752aae)
+- Save new account using Mappers
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/76ac844c-d95e-4712-a5a2-4e98261249cf)
+
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/f51e2990-4f37-4775-aacd-a41f73537558)
+
+10. Créer la couche Service (métier) du micro service
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/f2a22ad4-46a5-482e-92b9-9e9e38321eb7)
+
+11. Créer un Web service GraphQL pour ce micro-service
+- Test du Webservice using GrahiQL : Liste des comptes
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/ace2badd-a62c-4019-b7fc-1b9d652d01f6)
+- Test du Webservice using GrahiQL : Find account by Id
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/35c6fc4b-36ab-4527-a2a9-678ee5515e68)
+- Ajout de l'Exception Handler
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/1a11a723-27c9-4066-a723-afa742a91d4a)
+- Test du Webservice using GrahiQL : Add new account
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/3cd59bd4-0b01-4d01-b301-988107c4c912)
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/62c6b6b3-4c17-49ff-9844-d91ba883d68a)
+- Test du Webservice using GrahiQL : Update account
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/02a01aac-d859-4d36-83e3-034ed633964e)
+- Test du Webservice using GrahiQL : Delete account
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/c1b84891-5c64-4d44-b718-4e093ecaa0b6)
+- Ajout de l'entité Customer
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/e1c5542b-6c65-404f-ad6a-4c20809a90af)
+- Test du Webservice using GrahiQL : Liste des comptes avec noms de clients
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/d6823fab-c946-48ad-85be-f1d4495372a9)
+
+![image](https://github.com/oumaimabenaboud/micro_service/assets/120368654/f0e04f00-0b23-4f1c-a82e-af775afa67a8)
 
